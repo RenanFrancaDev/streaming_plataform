@@ -2,6 +2,7 @@ import "./index.scss"
 
 import { useEffect, useState } from "react";
 import { MovieService } from "../../api/MovieService"
+import MovieCard from "../../components/MovieCard";
 
 
 const Home = () => {
@@ -20,18 +21,14 @@ const [movies, setMovies] = useState([]);
 }, []);
 
 
-
-
 return (
-    <div className="container">
-      <div className="row gy-5">
+    <div className="Home">
         {movies.map((movie) => (
-          <div key={movie.id} className="col-12">
-            {movie.title}
-            
+          <div key={movie.id} className="card">
+            <MovieCard movie={movie}/>
           </div>
         ))}
-      </div>
+
     </div>
   );
 };

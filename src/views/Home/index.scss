@@ -1,0 +1,16 @@
+@use "../../sass/variables" as *;
+
+.Home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( $fire-gray, #c1c1c1);
+  
+    .card {
+      margin: 15px;
+      max-width: 300px;
+    }
+
+  }
