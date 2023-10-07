@@ -1,0 +1,35 @@
+@use "../../sass/variables" as *;
+
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: $fire-green;
+    border-bottom: 0.1px solid $fire-gray;
+    box-shadow: inset 0px 0px 50px $fire-gray;
+
+    div{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    h1 {
+      color: white;
+    }
+  
+    input {
+      width: 300px;
+      padding: 0.5rem 1rem;
+      border-radius: 15px;
+      border: none;
+      box-shadow: inset 0px 0px 8px $fire-gray;
+    }
+  
+    input:focus {
+      border: none;
+      outline: none;
+    }
+  }

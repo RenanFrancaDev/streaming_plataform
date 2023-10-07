@@ -7,7 +7,7 @@ The objective of the project is to create an interface to work with a movie API,
 
 ## Status
 
-Project base and components are being created
+Project base and components are being created.
 
 
 ## Install
