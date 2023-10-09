@@ -5,6 +5,10 @@ Web application that contains an interface to search and view films and their in
 
 The objective of the project is to create an interface to work with a movie API, simulating a streaming platform.
 
+## LINK
+
+https://streaming-plataform.vercel.app/
+
 ## Status
 
 Finished base project, movie list, movie detail and search input.
