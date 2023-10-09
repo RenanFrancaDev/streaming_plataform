@@ -1,7 +1,15 @@
 import { Link } from "react-router-dom";
 import "./index.scss"
 
-const Header = () => {
+
+const Header = (props) => {
+
+  function handleSubmit(e){
+    e.preventDefault();
+    const searchValue = e.target[0].value;
+    props.onSubmit(searchValue)
+    e.target[0].value="";
+  }
  
   return (
     <header className="Header">
@@ -9,9 +17,9 @@ const Header = () => {
         <Link to="/">
         <img src="/firedev_branco.svg" alt="Logo" width={80} />
         </Link>
-        <h1>Fire Development Movie List</h1>
+        <h1>Fire Development Movie</h1>
       </div>
-      <form>
+      <form onSubmit={handleSubmit}>
         <input type="text" placeholder="Search a movie" autoFocus />
       </form>
     </header>

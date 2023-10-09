@@ -7,8 +7,9 @@ The objective of the project is to create an interface to work with a movie API,
 
 ## Status
 
-Project base and components are being created.
+Finished base project, movie list, movie detail and search input.
 
+![App Screenshot](https://github.com/RenanFrancaDev/streaming_plataform/blob/main/src/assets/images/fire_movie.png)
 
 ## Install
 
